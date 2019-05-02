@@ -21,9 +21,9 @@ if (!spaceId || !accessToken) {
 
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Contentful starter',
+    title: 'Feed the Gillmores',
   },
-  pathPrefix: '/gatsby-contentful-starter',
+  pathPrefix: '/feed-the-gillmores', // TODO: Update with host path
   plugins: [
     'gatsby-transformer-remark',
     'gatsby-transformer-sharp',
