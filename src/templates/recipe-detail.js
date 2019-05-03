@@ -17,7 +17,7 @@ class RecipeDetailTemplate extends React.Component {
         <div style={{ background: '#fff' }}>
           <Helmet title={`${recipe.title} | ${siteTitle}`} />
           <div className={heroStyles.hero}>
-            <img src={recipe.linkToImage}></img>
+            <img className={heroStyles.heroImage} src={recipe.linkToImage}></img>
           </div>
           <div className="wrapper">
             <h1 className="section-headline">{recipe.title}</h1>

@@ -8,9 +8,6 @@ export default () => (
       <li className={styles.navigationItem}>
         <Link to="/">Home</Link>
       </li>
-      <li className={styles.navigationItem}>
-        <Link to="/recipe/">Recipe</Link>
-      </li>
     </ul>
   </nav>
 )

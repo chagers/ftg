@@ -27,14 +27,19 @@ h3 {
   font-weight: normal;
 }
 
+h3 {
+  font-size: 1em;
+}
+
 a {
   color: currentColor;
 }
 
 .wrapper {
-  width: calc(100% - 10vmin);
   margin: 0 auto;
   padding: 5vmin 0;
+  position: relative;
+  width: calc(100% - 10vmin);
 }
 
 /**

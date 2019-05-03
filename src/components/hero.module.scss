@@ -1,17 +1,18 @@
 .hero {
-  position: relative;
-  background: #000;
+  background: inherit;
   color: #fff;
-  text-align: center;
+  position: absolute;
+  right: 0;
 }
 
 .heroImage {
   /*
-    Ensure golden ratio for the hero size while limiting it to some extend to
+    Ensure golden ratio for the hero size while limiting it to some extent to
     the viewport width
   */
   height: 61.8vh;
   max-height: 400px;
+  width: auto;
 }
 
 .heroDetails {
