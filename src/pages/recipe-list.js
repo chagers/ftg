@@ -2,7 +2,7 @@ import React from 'react'
 import { Link, graphql } from 'gatsby'
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
-import styles from './recipe-list.module.css'
+import styles from './recipe-list.module.scss'
 import Layout from "../components/layout"
 import RecipePreview from '../components/recipe-preview'
 

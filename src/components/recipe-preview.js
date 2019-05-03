@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'gatsby'
 import Img from 'gatsby-image'
 
-import styles from './recipe-preview.module.css'
+import styles from './recipe-preview.module.scss'
 
 export default ({ recipe }) => (
   <div className={styles.preview}>
