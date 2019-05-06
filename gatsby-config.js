@@ -23,7 +23,7 @@ module.exports = {
   siteMetadata: {
     title: 'Feed the Gillmores',
   },
-  pathPrefix: '/feed-the-gillmores', // TODO: Update with host path
+  pathPrefix: '/ftg',
   plugins: [
     'gatsby-transformer-remark',
     'gatsby-transformer-sharp',
