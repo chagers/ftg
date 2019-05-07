@@ -28,7 +28,7 @@
     "prettier": "^1.17.0",
     "yargs-parser": "^13.0.0"
   },
-  "homepage": "https://github.com/chagers/",
+  "homepage": "https://github.com/chagers/ftg",
   "keywords": [
     "gatsby",
     "contentful"
