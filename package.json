@@ -35,6 +35,10 @@
   ],
   "license": "MIT",
   "main": "n/a",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:chagers/ftg.git"
+  },
   "scripts": {
     "dev": "gatsby develop",
     "lint": "eslint --ext .js,.jsx --ignore-pattern public .",
