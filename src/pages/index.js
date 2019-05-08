@@ -16,7 +16,14 @@ class RootIndex extends React.Component {
     return (
       <Layout location={this.props.location} >
         <div style={{ background: '#fff' }}>
-          <Helmet title={siteTitle} />
+          <Helmet
+            title={siteTitle}
+            link={[
+              {"rel": "icon", 
+               "type": "image/png", 
+               "href": "favicon.ico"
+              }
+             ]} />
           <div className="wrapper">
             <h2 className="section-headline">Recipe List</h2>
             <ul className="recipe-list">
