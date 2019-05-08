@@ -11,13 +11,14 @@ node_js:
   - "8"
 
 script:
-  - npm install
-  - npm run lint
+  - yarn install
+  - yarn run lint
 
 deploy:
   provider: pages
   skip_cleanup: true
   github_token: $GITHUB_TOKEN
   keep_history: true
+  script: yarn run deploy
   on:
     branch: master
