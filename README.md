@@ -6,7 +6,7 @@ All things recipes.
 
 ### Set up of the needed content model and create a configuration file
 
-Rename `.contentful.json.sample` to `.contentful.json` and add your configuration in this file.
+Copy `.contentful.json.sample`, rename to `.contentful.json`, and add your configuration in this file.
 
 ## Crucial Commands
 
