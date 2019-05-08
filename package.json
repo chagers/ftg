@@ -1,0 +1,51 @@
+{
+  "name": "ftg",
+  "description": "Feed the Gillmores Recipe App",
+  "version": "1.0.0",
+  "author": "Christine Hager <cehager@gmail.com>",
+  "dependencies": {
+    "gatsby-image": "^2.0.38",
+    "gatsby-plugin-react-helmet": "^3.0.12",
+    "gatsby-plugin-sass": "^2.0.11",
+    "gatsby-plugin-sharp": "^2.0.34",
+    "gatsby-source-contentful": "^2.0.48",
+    "gatsby-transformer-remark": "^2.3.8",
+    "gatsby-transformer-sharp": "^2.1.18",
+    "lodash": "^4.17.11",
+    "node-sass": "^4.12.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-helmet": "^5.2.0",
+    "sharp": "^0.22.0",
+    "yarn": "^1.15.2"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.16.0",
+    "eslint-plugin-react": "^7.12.4",
+    "gatsby": "^2.3.22",
+    "gh-pages": "^2.0.1",
+    "prettier": "^1.17.0",
+    "yargs-parser": "^13.0.0"
+  },
+  "homepage": "https://github.com/chagers/ftg",
+  "keywords": [
+    "gatsby",
+    "contentful"
+  ],
+  "license": "MIT",
+  "main": "n/a",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:chagers/ftg.git"
+  },
+  "scripts": {
+    "dev": "gatsby develop",
+    "lint": "eslint --ext .js,.jsx --ignore-pattern public .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.js' 'src/**/*.md' 'bin/*.js'",
+    "build": "gatsby build",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
+    "fix-semi": "eslint --quiet --ignore-pattern node_modules --ignore-pattern public --parser babel-eslint --no-eslintrc --rule '{\"semi\": [2, \"never\"], \"no-extra-semi\": [2]}' --fix *.js bin/*.js"
+  }
+}
