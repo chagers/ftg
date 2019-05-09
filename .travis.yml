@@ -1,0 +1,23 @@
+language: node_js
+
+os:
+  - linux
+  - osx
+
+node_js:
+  - "node"
+  - "lts/*"
+  - "8"
+
+script:
+  - yarn install
+  - yarn run lint
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  keep_history: true
+  script: yarn run deploy
+  on:
+    branch: master
