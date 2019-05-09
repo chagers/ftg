@@ -12,12 +12,13 @@ node_js:
 script:
   - yarn install
   - yarn run lint
+  - yarn run deploy
 
 deploy:
   provider: pages
   skip_cleanup: true
   github_token: $GITHUB_TOKEN
   keep_history: true
-  script: yarn run deploy
+  local_dir: public
   on:
     branch: master
