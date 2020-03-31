@@ -10,10 +10,11 @@ export default ({ recipe }) => (
     <h3 className={styles.previewTitle}>
       <Link to={`/recipe/${recipe.slug}`}>{recipe.title}</Link>
     </h3>
-    {recipe.tags.map(tag => (
+    {recipe.tags &&
+      recipe.tags.map((tag) => 
       <p className={styles.tag} key={tag}>
-        {tag}
+      {tag}
       </p>
-    ))}
+    )}
   </div>
 )
