@@ -5,8 +5,6 @@ import get from 'lodash/get'
 import Img from 'gatsby-image'
 import Layout from '../components/layout'
 
-import heroStyles from '../components/hero.module.scss'
-
 class RecipeDetailTemplate extends React.Component {
   render() {
     const recipe = get(this.props, 'data.contentfulRecipe')
@@ -16,11 +14,11 @@ class RecipeDetailTemplate extends React.Component {
       <Layout location={this.props.location} >
         <div style={{ background: '#fff' }}>
           <Helmet title={`${recipe.title} | ${siteTitle}`} />
-          <div className={heroStyles.hero}>
-            <img className={heroStyles.heroImage} src={recipe.linkToImage}></img>
+          <div>
+            <img src={recipe.linkToImage}></img>
           </div>
-          <div className="wrapper">
-            <h1 className="section-headline">{recipe.title}</h1>
+          <div>
+            <h1>{recipe.title}</h1>
             <p>
               {recipe.yields} | {recipe.time}
             </p>

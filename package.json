@@ -17,6 +17,7 @@
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.0",
     "sharp": "^0.23.4",
+    "uikit": "^3.3.8-dev.9309c161a",
     "yarn": "^1.22.0"
   },
   "devDependencies": {

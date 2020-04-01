@@ -2,7 +2,6 @@ import React from 'react'
 import { Link, graphql } from 'gatsby'
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
-import styles from './recipe-list.module.scss'
 import Layout from "../components/layout"
 import RecipePreview from '../components/recipe-preview'
 
@@ -13,19 +12,15 @@ class RecipeList extends React.Component {
 
     return (
       <Layout location={this.props.location} >
-        <div style={{ background: '#fff' }}>
-          <Helmet title={siteTitle} />
-          <div className="wrapper">
-            <h2 className="section-headline">Recipes Are Here</h2>
-            <ul className="recipe-list">
-              {recipes.map(({ node }) => {
-                return (
-                  <li key={node.slug}>
-                    <RecipePreview recipe={node} />
-                  </li>
-                )
-              })}
-            </ul>
+        <Helmet title={siteTitle} />
+        <div className="uk-container">
+          <h2>looking for a nom nom recipe, my moon and my stars?</h2>
+          <div>
+            {recipes &&
+              recipes.map(({ node }) => (
+                <RecipePreview recipe={node} key={node.slug}/>
+              ))
+            }
           </div>
         </div>
       </Layout>

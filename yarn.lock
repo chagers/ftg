@@ -12382,6 +12382,11 @@ ua-parser-js@^0.7.18:
   resolved "https://registry.yarnpkg.com/ua-parser-js/-/ua-parser-js-0.7.21.tgz#853cf9ce93f642f67174273cc34565ae6f308777"
   integrity sha512-+O8/qh/Qj8CgC6eYBVBykMrNtp5Gebn4dlGD/kKXVkJNDwyrAwSIqwz8CDf+tsAIWVycKcku6gIXJ0qwx/ZXaQ==
 
+uikit@^3.3.8-dev.9309c161a:
+  version "3.3.8-dev.9309c161a"
+  resolved "https://registry.yarnpkg.com/uikit/-/uikit-3.3.8-dev.9309c161a.tgz#13076b30a20a44db2bfc1c08ed55b1e691be473b"
+  integrity sha512-ihX8Dpf4WHEtx2dYI3UjfzhU5W6/f5d3CEGkAYQXM6HBojp0ErQuphdtTrERd+vu5lY8PmHVR8d/oaCdovwY1Q==
+
 unbzip2-stream@^1.0.9:
   version "1.3.3"
   resolved "https://registry.yarnpkg.com/unbzip2-stream/-/unbzip2-stream-1.3.3.tgz#d156d205e670d8d8c393e1c02ebd506422873f6a"
